@@ -92,3 +92,166 @@ section h3 {
     list-style-type: none;
     padding: 5px;
 }
+
+#portifolio {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(182, 0, 0);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-image figure {
+    margin: 0;
+    position: relative;
+}
+
+.carousel-image figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.carousel input[type="radio"] {
+    display: none;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+.carousel-controls label {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#slide1-1:checked ~ .carousel-images {
+    transform: translateX(0%);
+}
+
+#slide1-2:checked ~ .carousel-images {
+    transform: translateX(-100%);
+}
+
+#slide1-3:checked ~ .carousel-images {
+    transform: translateX(-200%);
+}
+
+#slide1-4:checked ~ .carousel-images {
+    transform: translateX(-300%);
+}
+
+#slide1-5:checked ~ .carousel-images {
+    transform: translateX(-400%);
+}
+
+#slide1-6:checked ~ .carousel-images {
+    transform: translateX(-500%);
+}
+
+#slide1-7:checked ~ .carousel-images {
+    transform: translateX(-600%);
+}
+
+#slide1-8:checked ~ .carousel-images {
+    transform: translateX(-700%);
+}
+
+#slide1-9:checked ~ .carousel-images {
+    transform: translateX(-800%);
+}
+
+#slide1-10:checked ~ .carousel-images {
+    transform: translateX(-900%);
+}
+
+#slide1-11:checked ~ .carousel-images {
+    transform: translateX(-1000%);
+}
+
+#slide1-12:checked ~ .carousel-images {
+    transform: translateX(-1100%);
+}
+
+#slide1-13:checked ~ .carousel-images {
+    transform: translateX(-1200%);
+}
+
+#slide1-14:checked ~ .carousel-images {
+    transform: translateX(-1300%);
+}
+
+#slide1-15:checked ~ .carousel-images {
+    transform: translateX(-1400%);
+}
+
+#slide1-16:checked ~ .carousel-images {
+    transform: translateX(-1500%);
+}
+
+#slide1-1:checked ~ .carousel-controls label[for="slide1-1"],
+#slide1-2:checked ~ .carousel-controls label[for="slide1-2"],
+#slide1-3:checked ~ .carousel-controls label[for="slide1-3"],
+#slide1-4:checked ~ .carousel-controls label[for="slide1-4"],
+#slide1-5:checked ~ .carousel-controls label[for="slide1-5"],
+#slide1-6:checked ~ .carousel-controls label[for="slide1-6"],
+#slide1-7:checked ~ .carousel-controls label[for="slide1-7"],
+#slide1-8:checked ~ .carousel-controls label[for="slide1-8"],
+#slide1-9:checked ~ .carousel-controls label[for="slide1-9"],
+#slide1-10:checked ~ .carousel-controls label[for="slide1-10"],
+#slide1-11:checked ~ .carousel-controls label[for="slide1-11"],
+#slide1-12:checked ~ .carousel-controls label[for="slide1-12"],
+#slide1-13:checked ~ .carousel-controls label[for="slide1-13"],
+#slide1-14:checked ~ .carousel-controls label[for="slide1-14"],
+#slide1-15:checked ~ .carousel-controls label[for="slide1-15"],
+#slide1-16:checked ~ .carousel-controls label[for="slide1-16"] {
+    background-color: #333;
+}
