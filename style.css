@@ -135,6 +135,9 @@ section h3 {
 .carousel-image {
     width: 100%;
     flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .carousel-image figure {
