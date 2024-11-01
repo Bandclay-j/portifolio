@@ -121,11 +121,13 @@ section h3 {
     background-color: #f9f9f9;
 }
 
+/* Links */
 .links {
     text-decoration: none;
     color: rgb(182, 0, 0);
 }
 
+/* Carrossel */
 .carousel {
     position: relative;
     width: 100%;
@@ -181,6 +183,7 @@ section h3 {
     cursor: pointer;
 }
 
+/* Serviços */
 #servicos table {
     width: 100%;
     border-collapse: collapse;
@@ -206,6 +209,7 @@ section h3 {
     background-color: #ddd;
 }
 
+/* Contato */
 #contato {
     padding: 20px;
     background-color: #f9f9f9;
@@ -262,6 +266,7 @@ section h3 {
     background-color: #0056b3;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -305,6 +310,7 @@ footer p {
     font-size: 14px;
 }
 
+/* Transição do carrossel de Slides */
 #slide1-1:checked ~ .carousel-images {
     transform: translateX(0%);
 }
@@ -426,4 +432,57 @@ footer p {
 #slide2-7:checked ~ .carousel-controls label[for="slide2-7"], 
 #slide3-1:checked ~ .carousel-controls label[for="slide3-1"] {
     background-color: #333;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .sobre-mim-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .sobre-mim-container p {
+        font-size: 1.2rem;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
 }
