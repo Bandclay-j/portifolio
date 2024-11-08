@@ -8,7 +8,7 @@ function ativarModo() {
 
     // Altera o ícone entre lua e sol
     if (body.classList.contains('dark-mode')) {
-        img.src = './img/sun'; // Ícone de sol para modo escuro
+        img.src = './img/sun.png'; // Ícone de sol para modo escuro
         img.alt = 'Icone do Sol';
     } else {
         img.src = './img/half-moon.png';

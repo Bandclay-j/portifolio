@@ -12,6 +12,7 @@ html {
 body {
     font-family: 'PT Serif', serif;
     background-color: #dfedff;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 /* Header */
@@ -21,6 +22,7 @@ header {
     padding: 20px 0;
     text-align: center;
     margin-bottom: 20px;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 header h1 {
@@ -45,10 +47,12 @@ header ul li {
 header ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 header ul li a:hover {
     color: #f1c40f;
+    transition: color 0.3s ease;
 }
 
 /* Section */
@@ -56,6 +60,7 @@ section {
     padding: 20px;
     background-color: white;
     margin: 20px;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 section h3 {
@@ -71,6 +76,7 @@ section h3 {
     background-color: #f9f9f9;
     border-radius: 8px;
     margin: 20px;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 .sobre-mim-container {
@@ -83,6 +89,7 @@ section h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 70%;
     margin: 0 auto;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 .sobre-mim-container img {
@@ -111,6 +118,7 @@ section h3 {
     border-radius: 8px;
     margin: 20px;
     text-align: center;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 .project-gallery {
@@ -118,6 +126,7 @@ section h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 .gallery-item {
@@ -129,6 +138,7 @@ section h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     background-color: #f9f9f9;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 /* Links */
@@ -199,27 +209,32 @@ section h3 {
     background-color: #f9f9f9;
     border-radius: 8px;
     margin: 20px;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 #servicos table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 #servicos th, #servicos td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: center;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 #servicos th {
     background-color: #4CAF50;
     color: white;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 #servicos tr:nth-child(even) {
     background-color: #f2f2f2;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 #servicos tr:hover {
@@ -232,6 +247,7 @@ section h3 {
     background-color: #f9f9f9;
     border-radius: 8px;
     margin: 20px;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 #contato h3 {
@@ -290,12 +306,14 @@ footer {
     padding: 20px;
     text-align: center;
     border-top: 4px solid #007bff;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 footer h4 {
     margin-bottom: 20px;
     font-size: 24px;
     color: #007bff;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 footer ul {
@@ -328,30 +346,22 @@ footer p {
 }
 
 .robo {
-    position: fixed;
-    bottom: 30px;
-    right: 10px;
-    width: 5%;
-    border-radius: 70%;
+    margin-left: 1800px;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
-button {
-    border-radius: 70%;
-    cursor: pointer;
-}
-
-img {
-    width: 100px;
-    height: 100px;
+.robo button {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #0A192F;
+    border: 1px solid #0A192F;
+    transition: background-color 1s ease, color 0.3s ease;
 }
 
 .robo img {
-    border-radius: 10%;
-    transition: transform 0.2s;
-}
-
-.robo button img:hover {
-    transform: scale(1.06);
+    width: 45px;
+    padding: 0;
 }
 
 /* Estilos para Modo Escuro */
@@ -388,6 +398,63 @@ body.dark-mode #servicos th {
     color: black;
 }
 
+body.dark-mode #servicos th, body.dark-mode #servicos td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: white;
+    transition: background-color 1s ease, color 0.3s ease;
+}
+
+body.dark-mode #servicos th {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 1s ease, color 0.3s ease;
+}
+
+body.dark-mode #servicos tr:nth-child(even) {
+    background-color: #303030;
+    color: white;
+}
+
+body.dark-mode #servicos tr:hover {
+    background-color: #585858;
+}
+
+body.dark-mode #contato h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d6d6d6;
+}
+
+body.dark-mode #contato label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+body.dark-mode #contato textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+body.dark-mode #contato button[type="submit"] {
+    background-color: #004999;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode #contato button[type="submit"]:hover {
+    background-color: #336dad;
+}
+
+body.dark-mode #contato input[type="text"],
+body.dark-mode #contato input[type="email"],
+body.dark-mode #contato textarea {
+    color: white;
+    background-color: #1c1c1c;
+}
+
 body.dark-mode .sobre-mim-container {
     background-color: #333;
 }
@@ -417,10 +484,6 @@ body.dark-mode footer h4 {
 body.dark-mode button {
     background-color: #333;
     color: #f0f0f0;
-}
-
-body.dark-mode .robo button img {
-    filter: invert(1);
 }
 
 
