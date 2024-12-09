@@ -357,6 +357,7 @@ footer p {
     background-color: #0A192F;
     border: 1px solid #0A192F;
     transition: background-color 1s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 .robo img {
@@ -391,6 +392,10 @@ body.dark-mode #contato {
 body.dark-mode #servicos {
     background-color: #222;
     color: black;
+}
+
+body.dark-mode #servicos h3 {
+    color: #ddd;
 }
 
 body.dark-mode #servicos th {
@@ -440,7 +445,7 @@ body.dark-mode #contato textarea {
 
 body.dark-mode #contato button[type="submit"] {
     background-color: #004999;
-    color: black;
+    color: white;
     transition: background-color 0.3s ease;
 }
 
@@ -596,6 +601,62 @@ body.dark-mode button {
     transform: translateX(0%);
 }
 
+#slide3-2:checked ~ .carousel-images {
+    transform: translateX(-100%);
+}
+
+#slide3-3:checked ~ .carousel-images {
+    transform: translateX(-200%);
+}
+
+#slide3-4:checked ~ .carousel-images {
+    transform: translateX(-300%);
+}
+
+#slide3-5:checked ~ .carousel-images {
+    transform: translateX(-400%);
+}
+
+#slide3-6:checked ~ .carousel-images {
+    transform: translateX(-500%);
+}
+
+#slide3-7:checked ~ .carousel-images {
+    transform: translateX(-600%);
+}
+
+#slide3-8:checked ~ .carousel-images {
+    transform: translateX(-700%);
+}
+
+#slide3-9:checked ~ .carousel-images {
+    transform: translateX(-800%);
+}
+
+#slide3-10:checked ~ .carousel-images {
+    transform: translateX(-900%);
+}
+
+#slide3-11:checked ~ .carousel-images {
+    transform: translateX(-1000%);
+}
+
+#slide3-12:checked ~ .carousel-images {
+    transform: translateX(-1100%);
+}
+
+#slide3-13:checked ~ .carousel-images {
+    transform: translateX(-1200%);
+}
+
+#slide3-14:checked ~ .carousel-images {
+    transform: translateX(-1300%);
+}
+
+#slide3-15:checked ~ .carousel-images {
+    transform: translateX(-1400%);
+}
+
 #slide1-1:checked ~ .carousel-controls label[for="slide1-1"],
 #slide1-2:checked ~ .carousel-controls label[for="slide1-2"],
 #slide1-3:checked ~ .carousel-controls label[for="slide1-3"],
@@ -619,7 +680,21 @@ body.dark-mode button {
 #slide2-5:checked ~ .carousel-controls label[for="slide2-5"],
 #slide2-6:checked ~ .carousel-controls label[for="slide2-6"],
 #slide2-7:checked ~ .carousel-controls label[for="slide2-7"], 
-#slide3-1:checked ~ .carousel-controls label[for="slide3-1"] {
+#slide3-1:checked ~ .carousel-controls label[for="slide3-1"],
+#slide3-2:checked ~ .carousel-controls label[for="slide3-2"],
+#slide3-3:checked ~ .carousel-controls label[for="slide3-3"],
+#slide3-4:checked ~ .carousel-controls label[for="slide3-4"],
+#slide3-5:checked ~ .carousel-controls label[for="slide3-5"],
+#slide3-6:checked ~ .carousel-controls label[for="slide3-6"],
+#slide3-7:checked ~ .carousel-controls label[for="slide3-7"],
+#slide3-8:checked ~ .carousel-controls label[for="slide3-8"],
+#slide3-9:checked ~ .carousel-controls label[for="slide3-9"],
+#slide3-10:checked ~ .carousel-controls label[for="slide3-10"],
+#slide3-11:checked ~ .carousel-controls label[for="slide3-11"],
+#slide3-12:checked ~ .carousel-controls label[for="slide3-12"],
+#slide3-13:checked ~ .carousel-controls label[for="slide3-13"],
+#slide3-14:checked ~ .carousel-controls label[for="slide3-14"],
+#slide3-15:checked ~ .carousel-controls label[for="slide3-15"] {
     background-color: #333;
 }
 
